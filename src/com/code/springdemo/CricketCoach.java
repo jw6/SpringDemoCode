@@ -3,6 +3,28 @@ package com.code.springdemo;
 public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
+	
+	// add new fields for emailedAddress and team
+	private String emailAddress;
+	private String team;
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CricketCoach: insided setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String email) {
+		System.out.println("CricketCoach: inside setTeam");
+		this.team = email;
+	}
 
 	public CricketCoach() {
 		System.out.println("CricketCoach: inside no-args constructor");
