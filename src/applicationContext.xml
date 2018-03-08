@@ -10,6 +10,8 @@
 	<!-- Define your dependencies here -->
 	<bean id="myFortune" class="com.code.springdemo.HappyFortuneService">
 	</bean>
+	
+	
 
     <!-- Define your beans here -->
 	<bean id="myCoach"
@@ -22,6 +24,10 @@
 		class="com.code.springdemo.SoccerCoach">
 	</bean>
 	
+	<bean id="myCricketCoach"
+		class="com.code.springdemo.CricketCoach">
+		<property name="fortuneService" ref="myFortune" />
+	</bean>
 </beans>
 
 
